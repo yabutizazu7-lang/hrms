@@ -1,0 +1,81 @@
+// Work clothing and equipment catalogue (Directive 173/2018, PDF pp. 4-27): completeness, no duplicates, rules, issuing, safe loading.
+require('../src/env'); process.env.RATE_LIMIT_MULT = '50';
+const fs = require('fs'), path = require('path'), { Client } = require('pg');
+const app = require('../src/index'), { pool } = require('../src/db'), { seedPpeCatalog } = require('../src/seed-ppe');
+const SEED = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/seed/ppe_directive_173_2018.json'), 'utf8'));
+let base, pass = 0, fail = 0, LAST; const ok = (c, m) => { if (c) pass++; else { fail++; console.log('  FAIL:', m, process.env.DEBUG ? JSON.stringify(LAST).slice(0, 300) : ''); } };
+const call = async (method, p, body, token) => { const r = await fetch(base + '/api' + p, { method, headers: { 'Content-Type': 'application/json', ...(token && { Authorization: 'Bearer ' + token }) }, body: body && JSON.stringify(body) }); const d = r.status === 204 ? {} : await r.json().catch(() => ({})); LAST = { method, p, s: r.status, d }; return { s: r.status, d }; };
+const PW = process.env.SEED_PASSWORD || 'Dev@12345678', login = async (u) => (await call('POST', '/login', { email: `${u}@hrms.test`, password: PW })).d.token, sec = (t) => console.log('\n' + t);
+const iso = (d) => d.toISOString().slice(0, 10), TODAY = iso(new Date()), addD = (s, n) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return iso(d); };
+const tag = Date.now().toString(36).toUpperCase();
+(async () => {
+  const srv = app.listen(0); base = `http://127.0.0.1:${srv.address().port}`; const T = {}; for (const u of ['hrm', 'hro', 'emp', 'admin']) T[u] = await login(u);
+  const LK = (await call('GET', '/lookups', null, T.hrm)).d, dep = LK.departments[0].id;
+  const mkPos = async (title) => { const r = await pool.query("INSERT INTO positions(code,title,department_id) VALUES($1,$2,$3) RETURNING id", ['P' + Math.random().toString(36).slice(2, 9).toUpperCase(), title, dep]); return r.rows[0].id; };
+  let n = 0; const mkEmp = async (posId, hire) => { n++; const r = await call('POST', '/employees', { first_name: 'Ppe' + n, father_name: 'T' + tag, sex: 'male', hire_date: hire || addD(TODAY, -900), department_id: dep, position_id: posId, basic_salary: 40000 }, T.hrm); if (r.s !== 201) console.log('mkEmp', JSON.stringify(r.d)); return r.d; };
+  const stock = async (itemId, qty) => call('POST', '/ppe/stock', { item_id: itemId, move_type: 'receive', qty }, T.hro);
+  const itemId = async (code) => (await pool.query('SELECT id FROM ppe_items WHERE code=$1', ['D173-' + code])).rows[0].id;
+  const issue = (emp, item, qty, extra = {}) => call('POST', '/ppe/issues', { employee_id: emp, item_id: item, quantity: qty, ...extra }, T.hro);
+
+  sec('1. Every item read from pages 4-27 is in the catalogue, once');
+  const db = (await pool.query("SELECT * FROM ppe_items WHERE code LIKE 'D173-%'")).rows, by = Object.fromEntries(db.map((r) => [r.code, r]));
+  const cnt = (p) => db.filter((r) => r.code.startsWith('D173-' + p)).length;
+  ok(cnt('A1-') === 43, 'Annex 1: all 43 items (#1-#43)'); ok(cnt('A2-') === 14, 'Annex 2: the 14 tailoring items that are not already in Annex 1 (#14 and #15 are the same garments as Annex 1 #42 and #36)'); ok(/Annex 2 #14/.test(by['D173-A1-42'].source_ref) && /Annex 2 #15/.test(by['D173-A1-36'].source_ref), 'Annex 2 #14 and #15 are recorded on the Annex 1 items they duplicate');
+  ok(cnt('A3-') === 9 && cnt('ART-') === 7 && cnt('EQ-') === 9, 'items printed only in Annex 3 (9), Articles 2/5 (7) and the equipment named in Art. 2(4) (9)'); ok(db.length === SEED.items.length && db.length === 82, 'the database holds exactly the 82 items of the data file');
+  ok(SEED.items.every((it) => by[it.code] && by[it.code].name_am === it.name_am && by[it.code].name_en === it.name_en && by[it.code].kind === it.kind && by[it.code].category === it.category), 'Amharic names, English names, kind and category match the data file exactly');
+  ok(new Set(db.map((r) => r.name_am)).size === db.length && new Set(db.map((r) => r.name_en)).size === db.length && new Set(db.map((r) => r.code)).size === db.length, 'no duplicate Amharic names, English names or codes');
+  ok(db.every((r) => r.name_am && r.name_en && r.source_ref && r.category && ['piece', 'pair', 'metre'].includes(r.unit)), 'every item has Amharic and English names, a category, a unit and its source reference');
+  ok(by['D173-A1-03'].name_am === 'ሸሚዝ' && by['D173-A1-24'].name_am === 'ጃንጥላ' && by['D173-EQ-06'].name_am === 'አካፋ' && by['D173-A1-08'].unit === 'pair' && by['D173-A1-01'].unit === 'metre', 'spot checks: names and units are as printed');
+  const dupEnt = (await pool.query('SELECT job_title_pattern,item_id,count(*) FROM ppe_entitlements GROUP BY 1,2 HAVING count(*)>1')).rows; ok(dupEnt.length === 0, 'no duplicate entitlements');
+  const ent = (await pool.query("SELECT n.*,i.code FROM ppe_entitlements n JOIN ppe_items i ON i.id=n.item_id WHERE n.group_no IS NOT NULL")).rows; ok(ent.length === 480, 'Annex 3: 480 entitlement rows from groups 1-11'); ok(ent.every((r) => r.verified === false && r.source_ref && r.note), 'every entitlement is loaded UNVERIFIED with its source and the printed wording');
+  const has = (pos, code) => ent.find((r) => r.job_title_pattern === pos && r.code === 'D173-' + code);
+  sec('2. Annex 3 rules are reproduced faithfully');
+  ok(has('የጥበቃ ሰራተኛ', 'A2-11').quantity === 2 && has('የጥበቃ ሰራተኛ', 'A1-08').quantity === 2, 'guards: 2 coats-and-trousers and 2 pairs of short leather shoes per year'); ok(has('የጥበቃ ሰራተኛ', 'A1-04').per_months === 36 && has('የጥበቃ ሰራተኛ', 'A1-05').per_months === 36, 'overcoat and rain clothing: one, then one every 3 years (36 months)');
+  ok(!has('የጥበቃ ሰራተኛ', 'A2-06') && has('ጥበቃና አትክልተኛ', 'A2-06'), 'the coverall is only for "guard and gardener" (printed restriction)');
+  ok(has('የጽዳት ሠራተኛ', 'A2-04') && !has('ተላላኪ', 'A2-04') && has('የቲሹካልቸር ላብራቶሪ ብርጭቆ አጣቢ ሰራተኛ', 'A3-02') && !has('የቲሹካልቸር ላብራቶሪ ብርጭቆ አጣቢ ሰራተኛ', 'A3-03'), 'apron, cap and gloves only for the positions the annex names (the glass-washer gets the cap but not the gloves)');
+  ok(has('እግረኛ ፖስተኛ', 'A1-24') && !has('ተላላኪ', 'A1-24'), 'umbrella only for the four positions named');
+  ok(!has('ሹፌር', 'A1-06') && !has('አምቡላንስ ሹፌር', 'A1-26') && has('ጎሚስታ', 'A1-06') && has('ሹፌር', 'A2-06').quantity === 2, 'drivers named in the exception do not get the rubber boots/apron/gloves; the others do');
+  ok(has('ማሽኒስት', 'A1-10').per_months === 24 && has('መካኒክ', 'A1-10').per_months === 24, 'safety shoes: one, then one every 2 years');
+  ok(has('ሞተረኛ ፖስተኛ', 'A3-05').per_months === 36, 'motorcycle postman helmet: one, then every 3 years'); ok(has('ልዩ ጥበቃ', 'A1-21').first_issue_quantity === 2 && has('ልዩ ጥበቃ', 'A1-21').quantity === 1 && has('ልዩ ጥበቃ', 'A1-21').active === false, 'special guard suit: 2 in the first year then 1; inactive because it applies to the Regional President\'s office only');
+  ok(ent.filter((r) => r.group_no === 10).every((r) => r.immediate) && ent.filter((r) => r.group_no !== 10).every((r) => !r.immediate), 'garage positions (group 10) are entitled from the assignment date (Art. 7(2)); nobody else is');
+  const g11 = ent.filter((r) => r.group_no === 11); ok(g11.length === 5 && g11.every((r) => r.active === false && /አይነበብም/.test(r.job_title_pattern)), 'group 11: the unreadable position title is NOT guessed; its legible items are stored inactive under a clear placeholder');
+  ok(!ent.some((r) => r.group_no === 10 && /ሁለገብ ረዳት|የምርት/.test(r.job_title_pattern)), 'positions in the smudged part of page 27 are not invented');
+  ok(ent.filter((r) => r.group_no === 4 || r.group_no === 5).every((r) => r.active === false), 'entitlements that apply only to the Regional President\'s office / Cabinet Affairs are inactive');
+
+  sec('3. The Uniform management screens work with the catalogue');
+  const list = (await call('GET', '/ppe/items', null, T.hro)).d; ok(list.length >= 80 && list.some((x) => x.category === 'footwear' && x.name_am === 'አጭር ቆዳ ጫማ ከቆዳ የተሰራ'), 'the Items list returns the catalogue with categories and Amharic names'); ok((await call('GET', '/ppe/items', null, T.emp)).s === 403, 'an employee cannot manage items');
+  ok((await call('POST', '/ppe/items', { code: 'X' + tag, name_en: 'Bad', kind: 'clothing', category: 'nonsense' }, T.hro)).s === 400, 'an unknown category is refused'); const okItem = await call('POST', '/ppe/items', { code: 'X' + tag, name_en: 'Custom ' + tag, name_am: 'የራስ እቃ ' + tag, kind: 'equipment', category: 'tools', unit: 'pair' }, T.hro); ok(okItem.s === 201 && okItem.d.category === 'tools', 'a new item can still be added with a category');
+  ok((await call('POST', '/ppe/items', { code: 'D173-A1-03', name_en: 'Dup', kind: 'clothing' }, T.hro)).s === 409, 'a catalogue code cannot be added twice');
+
+  sec('4. Issuing: selection, eligibility, periods');
+  const guardPos = await mkPos('የጥበቃ ሰራተኛ'), mechPos = await mkPos('መካኒክ'), spPos = await mkPos('ልዩ ጥበቃ');
+  const G = await mkEmp(guardPos), Gnew = await mkEmp(guardPos, addD(TODAY, -10)), M = await mkEmp(mechPos, addD(TODAY, -10)), S = await mkEmp(spPos);
+  const coat = await itemId('A1-04'), shirt = await itemId('A1-03'), safety = await itemId('A1-10'), suit = await itemId('A1-21'), umb = await itemId('A1-24');
+  for (const id of [coat, shirt, safety, suit, umb]) await stock(id, 20);
+  const el = (await call('GET', `/ppe/eligibility/${G.id}`, null, T.hro)).d; ok(el.items.some((x) => x.name_am === 'ሸሚዝ' && x.eligible && x.remaining === 2 && x.category), 'the eligibility list for a guard shows the printed entitlements with quantities and categories');
+  ok((await issue(G.id, umb, 1)).s === 409, 'an item with no entitlement for the job title cannot be issued');
+  ok((await issue(Gnew.id, shirt, 1)).s === 409, 'a guard hired 10 days ago waits for the six-month period (Art. 7(2))'); ok((await issue(M.id, safety, 1)).s === 201, 'a garage mechanic hired 10 days ago is entitled at once (Art. 7(2): garage work)');
+  ok((await issue(G.id, shirt, 2)).s === 201 && (await issue(G.id, shirt, 1)).s === 409, 'the yearly quantity (2 shirts) is enforced');
+  ok((await issue(G.id, coat, 1)).s === 201, 'overcoat issued'); ok((await issue(G.id, coat, 1)).s === 409, 'a second overcoat within 3 years is refused');
+  await pool.query("UPDATE ppe_issues SET issued_on = CURRENT_DATE - interval '37 months' WHERE employee_id=$1 AND item_id=$2", [G.id, coat]); ok((await issue(G.id, coat, 1)).s === 201, 'after 36 months the next overcoat can be issued');
+  await pool.query("UPDATE ppe_entitlements SET active=true WHERE job_title_pattern='ልዩ ጥበቃ' AND item_id=$1", [suit]); const fy = 2100;
+  ok((await issue(S.id, suit, 2, { fiscal_year: fy })).s === 201 && (await issue(S.id, suit, 1, { fiscal_year: fy })).s === 409, 'suit: two may be issued in the first year, not three'); ok((await issue(S.id, suit, 1, { fiscal_year: fy + 1 })).s === 201 && (await issue(S.id, suit, 1, { fiscal_year: fy + 1 })).s === 409, 'from the next year only one per year');
+  await pool.query("UPDATE ppe_entitlements SET active=false WHERE job_title_pattern='ልዩ ጥበቃ' AND item_id=$1", [suit]);   // restore the loaded state so this test can be repeated
+  ok((await call('POST', '/ppe/issues', { employee_id: G.id, item_id: shirt, quantity: 1 }, T.emp)).s === 403, 'an employee cannot issue items'); ok((await call('GET', '/ppe/mine', null, T.emp)).s === 200, 'employees see their own issued items');
+
+  sec('5. Loading is safe: nothing existing is changed or duplicated');
+  const before = (await pool.query('SELECT count(*)::int AS i,(SELECT count(*)::int FROM ppe_entitlements) AS e FROM ppe_items')).rows[0]; const again = await seedPpeCatalog(pool); const after = (await pool.query('SELECT count(*)::int AS i,(SELECT count(*)::int FROM ppe_entitlements) AS e FROM ppe_items')).rows[0];
+  ok(again.items_added === 0 && again.entitlements_added === 0 && before.i === after.i && before.e === after.e, 'loading the catalogue again adds nothing');
+  const adm = new Client({ host: process.env.DB_HOST, port: process.env.DB_PORT, user: process.env.DB_USER, password: process.env.DB_PASSWORD, database: 'postgres' }); await adm.connect(); await adm.query('DROP DATABASE IF EXISTS hrms_ppe_check'); await adm.query('CREATE DATABASE hrms_ppe_check'); await adm.end();
+  const c = new Client({ host: process.env.DB_HOST, port: process.env.DB_PORT, user: process.env.DB_USER, password: process.env.DB_PASSWORD, database: 'hrms_ppe_check' }); await c.connect();
+  for (const f of ['../db/schema.sql', '../db/migrations/002_directive_modules.sql', '../db/migrations/003_ppe_catalog.sql']) await c.query(fs.readFileSync(path.join(__dirname, f), 'utf8'));
+  await c.query("INSERT INTO ppe_items(code,name_am,name_en,kind,unit,immediate_eligibility) VALUES('MYUMB','ጃንጥላ','My umbrella (HR wording)','clothing','piece',true)"); const myId = (await c.query("SELECT id FROM ppe_items WHERE code='MYUMB'")).rows[0].id;
+  await c.query("INSERT INTO ppe_entitlements(job_title_pattern,item_id,quantity,source_ref,verified) VALUES('የጥበቃ ሰራተኛ',$1,9,'HR entered earlier',true)", [myId]);
+  const r1 = await seedPpeCatalog(c); ok(r1.items_added === 81 && r1.items_reused === 1, 'an item that already exists (same Amharic name) is reused, not duplicated (81 added, 1 reused)');
+  const mine = (await c.query("SELECT name_en,immediate_eligibility FROM ppe_items WHERE id=$1", [myId])).rows[0]; ok(mine.name_en === 'My umbrella (HR wording)' && mine.immediate_eligibility === true, 'the existing item was not modified');
+  const u = (await c.query("SELECT count(*)::int AS n FROM ppe_items WHERE name_am='ጃንጥላ'")).rows[0].n; ok(u === 1, 'only one umbrella exists');
+  const ex = (await c.query("SELECT quantity,verified,source_ref FROM ppe_entitlements WHERE job_title_pattern='የጥበቃ ሰራተኛ' AND item_id=$1", [myId])).rows; ok(ex.length === 1 && ex[0].quantity === 9 && ex[0].verified === true, 'an entitlement HR entered earlier is kept exactly as it was');
+  ok(((await c.query('SELECT count(*)::int AS n FROM ppe_entitlements')).rows[0].n) === 481, 'all 480 directive entitlements were added next to the 1 entitlement HR had entered');
+  await c.end(); const adm2 = new Client({ host: process.env.DB_HOST, port: process.env.DB_PORT, user: process.env.DB_USER, password: process.env.DB_PASSWORD, database: 'postgres' }); await adm2.connect(); await adm2.query('DROP DATABASE hrms_ppe_check'); await adm2.end();
+  console.log(`\n${pass} passed, ${fail} failed`); srv.close(); await pool.end(); process.exit(fail ? 1 : 0);
+})().catch((e) => { console.error(e); process.exit(1); });

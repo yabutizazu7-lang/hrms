@@ -1,0 +1,15 @@
+import { useEffect, useState } from 'react'; import api from '../api'; import { tx, tv } from '../i18n/index.js';
+import { useLoad, qs, Field, Msg, Loading, dt, dOnly } from '../ui.jsx'; import { printArea, downloadCsv } from '../print.js';
+const TITLES = { workforce_by_department: 'Workforce by department', workforce_profile: 'Workforce profile', turnover: 'Hires, exits and turnover (12 months)', leave_utilization: 'Leave utilization', attendance_lateness: 'Late arrivals by department', tenure: 'Years of service', work_experience: 'Work experience', recruitment_funnel: 'Recruitment funnel', expiries: 'Contracts, probation and documents expiring' };
+export default function Reports() {
+  const { data: names } = useLoad(() => api('/reports'), []), [name, setName] = useState(''), [range, setRange] = useState({ from: '', to: '' }), [rep, setRep] = useState(null), [err, setErr] = useState('');
+  useEffect(() => { if (names && !name) setName(names[0]); }, [names]); // eslint-disable-line
+  useEffect(() => { if (!name) return; setErr(''); setRep(null); api(`/reports/${name}${qs(range)}`).then(setRep).catch((e) => setErr(e.message)); }, [name, range.from, range.to]); // eslint-disable-line
+  const cell = (r, [k, , t]) => t === 'dt' ? dt(r[k]) : t === 'date' ? dOnly(r[k]) : t === 'enum' ? tv(r[k]) : r[k] === 'Yes' || r[k] === 'No' ? tx(r[k]) : r[k] ?? '';
+  return (<div><h2>{tx('Reports')}</h2>{!names ? <Loading /> : <>
+    <div className="tabs noprint">{names.map((n) => <button key={n} className={name === n ? 'on' : ''} onClick={() => setName(n)}>{tx(TITLES[n] || n)}</button>)}</div>
+    {!['workforce_by_department','workforce_profile','turnover','tenure','recruitment_funnel','expiries','leave_utilization','attendance_lateness'].includes(name) && <div className="toolbar noprint"><Field label="From" type="date" value={range.from} onChange={(v) => setRange({ ...range, from: v })} /><Field label="To" type="date" value={range.to} onChange={(v) => setRange({ ...range, to: v })} /></div>}<Msg err={err} />
+    {name && !rep && !err && <Loading />}{rep && <div className="sheet printable"><div className="bar"><h3>{tx(TITLES[name] || name)}</h3><span className="row noprint"><button className="ghost small" onClick={() => printArea()}>{tx('Print / save as PDF')}</button><button className="ghost small" onClick={() => downloadCsv(name, rep.columns.map(([key, label, type]) => ({ key, label: tx(label), type })), rep.rows)}>{tx('Download CSV')}</button></span></div>
+      <p className="muted">{tx('Generated')} {dt(new Date())} · {rep.rows.length} {tx('rows')}{(range.from || range.to) && ` · ${range.from || '…'} → ${range.to || '…'}`}</p>
+      <div className="scroll"><table><thead><tr>{rep.columns.map(([k, l]) => <th key={k}>{tx(l)}</th>)}</tr></thead><tbody>{rep.rows.map((r, i) => <tr key={i}>{rep.columns.map((c) => <td key={c[0]}>{cell(r, c)}</td>)}</tr>)}{!rep.rows.length && <tr><td colSpan={rep.columns.length} className="muted">{tx('No data for this period.')}</td></tr>}</tbody></table></div></div>}</>}</div>);
+}

@@ -1,0 +1,1604 @@
+{
+ "source": "Directive No. 173/2018 E.C. (የተሻሻለው የመንግስት ሠራተኞች የሥራ ልብስና የሥራ መሣሪያዎች አሰጣጥና አጠቃቀም መመሪያ)",
+ "pdf_pages": "4-27",
+ "read_by": "Page images read directly (scanned PDF, Amharic OCR was not trusted for tables)",
+ "items": [
+  {
+   "code": "D173-A1-01",
+   "name_am": "ብትን ጨርቅ ከካኪ የተሰራ",
+   "name_en": "Khaki fabric, cut length (100% cotton khaki)",
+   "kind": "clothing",
+   "category": "fabric",
+   "unit": "metre",
+   "source_ref": "Annex 1 (አባሪ 1) #1",
+   "note": "Art. 2(5): khaki = 100% cotton khaki twill. Art. 4(1): used for coveralls, full work coat, ¾ coat and apron. Price-list quantity as printed: አንድ ሜትር."
+  },
+  {
+   "code": "D173-A1-02",
+   "name_am": "ብትን ጨርቅ ከፖሊስተር ካኪ የተሰራ ወይም 6000 ቴትረን",
+   "name_en": "Polyester-khaki or Tetron 6000 fabric, cut length",
+   "kind": "clothing",
+   "category": "fabric",
+   "unit": "metre",
+   "source_ref": "Annex 1 (አባሪ 1) #2",
+   "note": "Art. 4(2): polyester khaki is used for coat, trousers, matching shirt and trousers, jacket and straight skirt. Art. 4(7): Tetron 6000 is used for the health professionals' full uniform and the full gown. Price-list quantity as printed: አንድ ሜትር."
+  },
+  {
+   "code": "D173-A1-03",
+   "name_am": "ሸሚዝ",
+   "name_en": "Shirt",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #3",
+   "note": "Art. 2(9), Art. 4(3): made of fabric with lower synthetic and higher cotton content, made for shirts. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-04",
+   "name_am": "ካፖርት (ባለገበር)",
+   "name_en": "Overcoat (with lining)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #4",
+   "note": "Art. 2(20), Art. 6(2): wool, or cotton/synthetic with a warm lining. If unavailable, a field jacket with lining may be bought instead. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-05",
+   "name_am": "የዝናብ ልብስ",
+   "name_en": "Rain clothing",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #5",
+   "note": "Art. 2(21): rain-protection clothing of synthetic or plastic. Art. 6(3): if unavailable, an umbrella is given instead. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-06",
+   "name_am": "የፕላስቲክ ቡትስ ጫማ ባለገበር",
+   "name_en": "Rubber/plastic boots (with lining)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #6",
+   "note": "Art. 2(15), Art. 5(7): natural-rubber boots, easy to clean, for the rainy season and mud. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-07",
+   "name_am": "ቡትስ ቆዳ ጫማ ከቆዳ የተሰራ",
+   "name_en": "Leather boots (long)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #7",
+   "note": "Art. 2(14), Art. 5(3): laced leather boots, height not above the thigh. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-08",
+   "name_am": "አጭር ቆዳ ጫማ ከቆዳ የተሰራ",
+   "name_en": "Short leather shoes",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #8",
+   "note": "Art. 2(12), Art. 5(1): leather shoe, height not above the ankle, with or without laces. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-09",
+   "name_am": "አጭር ቡትስ ቆዳ ጫማ ከቆዳ የተሰራ",
+   "name_en": "Short leather boots (ankle boots)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #9",
+   "note": "Art. 2(13), Art. 5(2): leather boot covering the ankle, without laces. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-10",
+   "name_am": "ሴፍቲ ቆዳ ጫማ ከቆዳ የተሰራ",
+   "name_en": "Safety leather shoes",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #10",
+   "note": "Annex 3 prints this as \"ሴፍቲ ሹዝ\". Art. 5(6): leather footwear protecting against falling objects, thorns and similar hazards. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-11",
+   "name_am": "የስፖርት ጫማ (ቶርሽን/ስኒከር)",
+   "name_en": "Sports shoes (torsion / sneakers)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #11",
+   "note": "Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-12",
+   "name_am": "የስፖርት ቱታ (ኮትና ሱሪ ሙሉ)",
+   "name_en": "Sports tracksuit (full coat and trousers)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #12",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-13",
+   "name_am": "ቲሸርት",
+   "name_en": "T-shirt",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #13",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-14",
+   "name_am": "የባህል ጫማ",
+   "name_en": "Traditional shoes",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #14",
+   "note": "Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-15",
+   "name_am": "ሌዘር ጃኬት",
+   "name_en": "Leather jacket",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #15",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-16",
+   "name_am": "ሙሉ የባህል ልብስ ለወንድ (እንደየ አካባቢው ባህል)",
+   "name_en": "Full traditional clothing for men (according to local culture)",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #16",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-17",
+   "name_am": "ሙሉ የባህል ልብስ ለሴት (እንደየ አካባቢው ባህል)",
+   "name_en": "Full traditional clothing for women (according to local culture)",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #17",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-18",
+   "name_am": "የእጅ ጓንት ፕላስቲክ የተሰራ",
+   "name_en": "Gloves made of plastic",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #18",
+   "note": "Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-19",
+   "name_am": "የእጅ ጓንት ከሽራ የተሰራ",
+   "name_en": "Gloves made of cloth (ሽራ)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #19",
+   "note": "\"ሽራ\" kept as printed. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-20",
+   "name_am": "የእጅ ጓንት ከሌዘር የተሰራ",
+   "name_en": "Gloves made of \"leather\" (ሌዘር)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #20",
+   "note": "\"ሌዘር\" kept as printed (leather or leather-like). Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-21",
+   "name_am": "ሱፍ ኮትና ሱሪ (ጥራቱን የጠበቀ የሃገር ውስጥ ምርት)",
+   "name_en": "Wool-blend suit, coat and trousers (quality local product)",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #21",
+   "note": "Art. 2(10): \"ሱፍ\" is a wool and polyester blend, not 100% wool. Art. 4(5). Price-list quantity as printed: ሁለት."
+  },
+  {
+   "code": "D173-A1-22",
+   "name_am": "ክራባት",
+   "name_en": "Necktie",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #22",
+   "note": "Annex 3 prints this as \"ከረባት\". Price-list quantity as printed: ሁለት."
+  },
+  {
+   "code": "D173-A1-23",
+   "name_am": "የኬሚካል መከላከያ ቱታ ከነ ቆቡ",
+   "name_en": "Chemical-protection coverall with hood",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #23",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-24",
+   "name_am": "ጃንጥላ",
+   "name_en": "Umbrella",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #24",
+   "note": "Art. 2(22): protection from rain or sun. Annex 3 prints \"ጃንጥላ/ጥላ\". Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-25",
+   "name_am": "የብረት ቆብ/ማይካ/",
+   "name_en": "Metal helmet (\"mica\")",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #25",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-26",
+   "name_am": "የላስቲክ ሽርጥ (አፕሮን)",
+   "name_en": "Plastic apron",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "metre",
+   "source_ref": "Annex 1 (አባሪ 1) #26",
+   "note": "Price-list unit is per metre as printed. Annex 3 prints \"የላስቲክ ሽርጥ/ኤፕሮን\". Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-27",
+   "name_am": "የጨረር መከላከያ መነፀር",
+   "name_en": "Radiation-protection glasses",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #27",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-28",
+   "name_am": "የኬሚካል መከላከያ መነፀር",
+   "name_en": "Chemical-protection glasses",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #28",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-29",
+   "name_am": "ሴፍቲ መነፀር",
+   "name_en": "Safety glasses",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #29",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-30",
+   "name_am": "ማስክ (አፍና አፍንጫ መሸፈኛ)",
+   "name_en": "Mask (mouth and nose cover)",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #30",
+   "note": "Annex 3, group 11 says it is \"given as work equipment\" (no quantity stated). Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-31",
+   "name_am": "አይነ-ርግብ",
+   "name_en": "Eye shield / goggles (አይነ-ርግብ)",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #31",
+   "note": "English wording is indicative; verify the meaning of \"አይነ-ርግብ\". Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-32",
+   "name_am": "የትክሻ ባጅ (መለዮ)",
+   "name_en": "Shoulder badge (insignia)",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #32",
+   "note": "\"መለዮ\" as printed. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-33",
+   "name_am": "የአበነብስ ጥቁር ፈረጅያ",
+   "name_en": "Black robe (ፈረጅያ) of the \"አበነብስ\"",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #33",
+   "note": "Art. 6(4): fabric for robes and ferenjia is any black fabric that is not wool. English wording of \"አበነብስ\" is not given in the directive; verify. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-34",
+   "name_am": "የአበነብስ ክብ ቆብ",
+   "name_en": "Round cap of the \"አበነብስ\"",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #34",
+   "note": "English wording of \"አበነብስ\" is not given in the directive; verify. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-35",
+   "name_am": "ቆዳ መሰል የላስቲክ ጨርቅ",
+   "name_en": "Leather-like plastic fabric, cut length",
+   "kind": "clothing",
+   "category": "fabric",
+   "unit": "metre",
+   "source_ref": "Annex 1 (አባሪ 1) #35",
+   "note": "Price-list quantity as printed: አንድ ሜትር."
+  },
+  {
+   "code": "D173-A1-36",
+   "name_am": "የተቋሙ ቋሚ ንብረት ሆኖ የእሳት አዳጋን ሊከላከል የሚችል ጃኬትና ሱሪ",
+   "name_en": "Fire-protective jacket and trousers (permanent property of the institution)",
+   "kind": "clothing",
+   "category": "fire_fighting",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #36 · Annex 2 #15",
+   "note": "Printed as permanent property of the institution. Annex 2 #15 lists the tailoring of the same jacket and trousers. Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-37",
+   "name_am": "ከቆዳ የተሰራ የእጅ ጓንት",
+   "name_en": "Gloves made of leather (hide)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #37",
+   "note": "Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-38",
+   "name_am": "የእሳት አዳጋ መከላከያ የአንገት መከላከያ ልብስ",
+   "name_en": "Fire-protection neck-protection garment",
+   "kind": "clothing",
+   "category": "fire_fighting",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #38",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-39",
+   "name_am": "የተቋሙ ቋሚ ንብረት ሆኖ የእሳት አዳጋ የመተንፈሻ መሳሪያ",
+   "name_en": "Fire-fighting breathing apparatus (permanent property of the institution)",
+   "kind": "equipment",
+   "category": "fire_fighting",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #39",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-40",
+   "name_am": "ለእሳት አዳጋ የሚያገለግል የጆሮ መሸፈኛ",
+   "name_en": "Fire-fighting ear cover",
+   "kind": "clothing",
+   "category": "fire_fighting",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #40",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-41",
+   "name_am": "ለእሳት አደጋ የሚያገለግል ብርድ ልብስ",
+   "name_en": "Fire-fighting blanket",
+   "kind": "equipment",
+   "category": "fire_fighting",
+   "unit": "piece",
+   "source_ref": "Annex 1 (አባሪ 1) #41",
+   "note": "Price-list quantity as printed: አንድ."
+  },
+  {
+   "code": "D173-A1-42",
+   "name_am": "ለእሳት አደጋ የሚያገለግል አብረቅራቂ ቱታ",
+   "name_en": "Reflective coverall for fire-fighting",
+   "kind": "clothing",
+   "category": "fire_fighting",
+   "unit": "pair",
+   "source_ref": "Annex 1 (አባሪ 1) #42 · Annex 2 #14",
+   "note": "Annex 2 #14 lists the tailoring of the same coverall. Price-list quantity as printed: አንድ ጥንድ."
+  },
+  {
+   "code": "D173-A1-43",
+   "name_am": "አንፀባራቂ ብትን ጨርቅ ከላን የተሰራ",
+   "name_en": "Reflective fabric, cut length (linen)",
+   "kind": "clothing",
+   "category": "fabric",
+   "unit": "metre",
+   "source_ref": "Annex 1 (አባሪ 1) #43",
+   "note": "Art. 4(8): reflective linen fabric used for the reflective vest. Price-list quantity as printed: አንድ ሜትር."
+  },
+  {
+   "code": "D173-A2-01",
+   "name_am": "ለሴት ጃኬትና ጉርድ ቀሚስ",
+   "name_en": "Women's jacket and straight skirt (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #1",
+   "note": "Art. 4(2): polyester khaki. Art. 6(1): women may choose the style of tailoring. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-02",
+   "name_am": "ለሴት አንድ ወጥ ሸሚዝና ሱሪ ወይም ቀሚስ",
+   "name_en": "Women's matching shirt and trousers, or dress (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #2",
+   "note": "Art. 6(1): women may change shirt-and-trousers to a dress or to a skirt and shirt. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-03",
+   "name_am": "ለሴት አንድ ወጥ ሸሚዝና ሱሪ",
+   "name_en": "Women's matching shirt and trousers (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #3",
+   "note": "Art. 2(8): shirt and trousers of the same fabric and colour, wearable without a coat. Art. 6(1). Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-04",
+   "name_am": "ለሙሉ ሽርጥ",
+   "name_en": "Full apron (tailored)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #4",
+   "note": "Art. 2(24): worn over clothes to keep them from getting dirty; Art. 4(1): khaki fabric. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-05",
+   "name_am": "ለ¾ኛ ካፖርት/ጋወን",
+   "name_en": "¾ coat / gown (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #5",
+   "note": "Art. 2(18): gown, full work coat or ¾ coat without lining; Art. 4(1): khaki fabric. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-06",
+   "name_am": "ለቱታ",
+   "name_en": "Coverall (tailored)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #6",
+   "note": "Art. 2(25): trousers sewn to a jacket-like top, worn over clothes; Art. 4(1): khaki fabric. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-07",
+   "name_am": "ለአበነብስ ቀሚስና ሱሪ",
+   "name_en": "Dress/robe and trousers of the \"አበነብስ\" (tailored)",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #7",
+   "note": "English wording of \"አበነብስ\" is not given in the directive; verify. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-08",
+   "name_am": "ለጨርቅ ቆብ",
+   "name_en": "Fabric cap (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #8",
+   "note": "Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-09",
+   "name_am": "ለችሎት ካባ",
+   "name_en": "Court robe (tailored)",
+   "kind": "clothing",
+   "category": "ceremonial",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #9",
+   "note": "Art. 2(23): the black robe worn by judges, prosecutors and attorneys during a hearing. Art. 6(4): black non-wool fabric. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-10",
+   "name_am": "ለወንድ አንድ ወጥ ሸሚዝና ሱሪ",
+   "name_en": "Men's matching shirt and trousers (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #10",
+   "note": "Art. 2(8). Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-11",
+   "name_am": "ለወንድ ኮትና ሱሪ",
+   "name_en": "Men's coat and trousers (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #11",
+   "note": "Art. 4(2): polyester khaki fabric. Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-12",
+   "name_am": "ቆዳ መሰል የላስቲክ ጨርቅ ኮትና ሱሪ ወይም ጃኬትና ሱሪ ለወንድ",
+   "name_en": "Leather-like plastic-fabric coat and trousers, or jacket and trousers, for men (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #12",
+   "note": "Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-13",
+   "name_am": "ቆዳ መሰል የላስቲክ ጨርቅ ኮትና ሱሪ ወይም ጃኬትና ሱሪ ወይም ቀሚስ ለሴት",
+   "name_en": "Leather-like plastic-fabric coat and trousers, or jacket and trousers, or dress, for women (tailored)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #13",
+   "note": "Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A2-16",
+   "name_am": "አንፀባራቂ ሰደርያ",
+   "name_en": "Reflective vest (ሰደርያ)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 2 (አባሪ 2) #16",
+   "note": "Art. 2(19): reflective vest of linen fabric, without lining. Art. 4(8). Annex 2 is the tailoring-price list: this is a garment that is sewn from fabric."
+  },
+  {
+   "code": "D173-A3-01",
+   "name_am": "ኮትና ሱሪ",
+   "name_en": "Coat and trousers (as printed for drivers and assistants)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 3 (አባሪ 3) group 3",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-02",
+   "name_am": "ከጨርቅ የተሰራ የፀጉር መሸፈኛ ቆብ",
+   "name_en": "Fabric hair-covering cap",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Annex 3 (አባሪ 3) group 3",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-03",
+   "name_am": "የእጅ ጓንት",
+   "name_en": "Gloves (material not specified)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 3 (አባሪ 3) group 3",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-04",
+   "name_am": "ቆዳ መሰል የላስቲክ ኮትና ሱሪ ወይም ጃኬትና ሱሪ/ቀሚስ",
+   "name_en": "Leather-like plastic coat and trousers, or jacket and trousers/dress",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Annex 3 (አባሪ 3) group 6",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-05",
+   "name_am": "የብረት ወይም ማይካ ወይም ፕላስቲክ ቆብ",
+   "name_en": "Metal, \"mica\" or plastic helmet",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 3 (አባሪ 3) group 6",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-06",
+   "name_am": "የእጅ ጓንት ከሽራ ወይም ከፕላስቲክ የተሰራ",
+   "name_en": "Gloves of cloth (ሽራ) or plastic",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 3 (አባሪ 3) group 7",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-07",
+   "name_am": "የእጅ ጓንት ከሽራ ወይም ከሌዘር የተሰራ",
+   "name_en": "Gloves of cloth (ሽራ) or \"leather\" (ሌዘር)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 3 (አባሪ 3) group 10",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-08",
+   "name_am": "የላስቲክ ጓንት",
+   "name_en": "Rubber/plastic gloves",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "pair",
+   "source_ref": "Annex 3 (አባሪ 3) group 11",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-A3-09",
+   "name_am": "የጨረር መከላከያ ወይም ሴፍቲ መነፀር",
+   "name_en": "Radiation-protection or safety glasses",
+   "kind": "equipment",
+   "category": "protective_equipment",
+   "unit": "piece",
+   "source_ref": "Annex 3 (አባሪ 3) group 10",
+   "note": "Item wording as printed in Annex 3; no earlier annex lists exactly this item."
+  },
+  {
+   "code": "D173-ART-01",
+   "name_am": "ፊልድ ጃኬት",
+   "name_en": "Field jacket",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Art. 2(16)",
+   "note": "Art. 2(16), Art. 6(2): warm lined jacket; may be bought in place of an overcoat when overcoat fabric is not available."
+  },
+  {
+   "code": "D173-ART-02",
+   "name_am": "የጤና ባለሙያ ሙሉ የደንብ ልብስ",
+   "name_en": "Health professional full uniform",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Art. 2(17)",
+   "note": "Art. 2(17): colours by unit: pale green (operating theatre and intensive care), burgundy (emergency), silver (other physicians), pale blue (nurses), pale pink (midwives). Art. 4(7): Tetron 6000. Art. 6(5): style details."
+  },
+  {
+   "code": "D173-ART-03",
+   "name_am": "ጥቁር ሰማያዊ ደረጃውን የጠበቀ የደንብ ልብስ",
+   "name_en": "Dark-blue standard uniform (pharmacy, radiology, physiotherapy)",
+   "kind": "clothing",
+   "category": "clothing",
+   "unit": "piece",
+   "source_ref": "Art. 2(26)",
+   "note": "Art. 2(26)."
+  },
+  {
+   "code": "D173-ART-04",
+   "name_am": "ሙሉ ጋወን (አረንጓዴ)",
+   "name_en": "Full gown, green (operating theatre and delivery)",
+   "kind": "clothing",
+   "category": "protective_clothing",
+   "unit": "piece",
+   "source_ref": "Art. 2(27)",
+   "note": "Art. 2(27): green full-sleeve gown worn front-to-back with ties; for surgery staff and delivery-room staff. Art. 4(7): Tetron 6000."
+  },
+  {
+   "code": "D173-ART-05",
+   "name_am": "ዶክተር ሹዝ ጫማ",
+   "name_en": "Doctor shoes (white)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Art. 5(8)",
+   "note": "Art. 5(8): light leather shoe, open at the back and closed at the front, white."
+  },
+  {
+   "code": "D173-ART-06",
+   "name_am": "ከበድ ላለ የሲቪል ስራ የሚውል ንዝረትን የሚከላከል ሶል ያለው ጫማ",
+   "name_en": "Heavy-duty civil work shoes with vibration-resistant sole (short, short boot or long boot)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Art. 5(4)",
+   "note": "Art. 5(4): zip or lace, for heavier civil work; the sole is made of vibration-resistant material; the same kind as the footwear given for military (paratrooper-type) use."
+  },
+  {
+   "code": "D173-ART-07",
+   "name_am": "ለሴቶች ቀለል ያለ ክብደት ያለው የቆዳ ጫማ",
+   "name_en": "Lightweight leather shoes for women (short, short boot or long boot)",
+   "kind": "footwear",
+   "category": "footwear",
+   "unit": "pair",
+   "source_ref": "Art. 5(5)",
+   "note": "Art. 5(5): light leather footwear for women: short, short boot or long boot."
+  },
+  {
+   "code": "D173-EQ-01",
+   "name_am": "መነጽር",
+   "name_en": "Glasses",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-02",
+   "name_am": "ጠመንጃ",
+   "name_en": "Gun (rifle)",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-03",
+   "name_am": "ማጭድ",
+   "name_en": "Sickle",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-04",
+   "name_am": "የአይን መሸፈኛ ጎግል",
+   "name_en": "Goggles (eye cover)",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-05",
+   "name_am": "የአፍ መሸፈኛ ፊልተር",
+   "name_en": "Mouth-cover filter (respirator filter)",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-06",
+   "name_am": "አካፋ",
+   "name_en": "Shovel",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-07",
+   "name_am": "መዶሻ",
+   "name_en": "Hammer",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-08",
+   "name_am": "መርቴሎ",
+   "name_en": "Mallet / sledgehammer (መርቴሎ)",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  },
+  {
+   "code": "D173-EQ-09",
+   "name_am": "የአትክልት መቀስ",
+   "name_en": "Garden shears",
+   "kind": "equipment",
+   "category": "tools",
+   "unit": "piece",
+   "source_ref": "Art. 2(4)",
+   "note": "Named in the definition of work equipment (Art. 2(4)). The directive says other tools are decided by each institution; no quantity is stated."
+  }
+ ],
+ "groups": [
+  {
+   "no": 1,
+   "page": 24,
+   "positions": [
+    "የጥበቃ ሰራተኛ",
+    "ጥበቃና አትክልተኛ",
+    "የዘብ ኃላፊ",
+    "ጥበቃ ተቆጣጣሪ",
+    "ጥበቃ ሰራተኛ ሃላፊ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-11",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-01",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-03",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-04",
+     "quantity": 1,
+     "per_months": 36,
+     "first_issue_quantity": null,
+     "note": "በመጀመሪያ አንድ ተሰጥቶ በየ3 ዓመቱ አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ (ለጥበቃና አትክልተኛ ብቻ)",
+     "only": [
+      "ጥበቃና አትክልተኛ"
+     ],
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-05",
+     "quantity": 1,
+     "per_months": 36,
+     "first_issue_quantity": null,
+     "note": "በመጀመሪያ አንድ ተሰጥቶ በየ3 ዓመቱ አንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "page": 24,
+   "positions": [
+    "የከተማ አረንጓዴ ቦታዎች ልማት እንክብካቤ ሰራተኛ/ተቆጣጣሪ",
+    "አትክልተኛ",
+    "ግቢ ጽዳትና ውበት ባለሙያ/ሰራተኛ",
+    "ለምድረ ግቢ ጽዳትና ውበት እንክብካቤ ባለሙያ ሰራተኛ",
+    "የግቢ ውበት ባለሙያ",
+    "ለጋርደኒግ ባለሙያ/ሰራተኛ",
+    "ለከተማ ጽዳትና ውበት ባለሙያ/ሰራተኛ",
+    "ለከተማ ጽዳትና ውበት ባለሙያ/ተቆጣጣሪ/ ሰራተኛ",
+    "ችግኝ ጣቢያ ሠራተኛ",
+    "ግሪን ሃውስ ሰራተኛ",
+    "ችግኝ ጣቢያ ቴክኒሻን"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "page": 24,
+   "positions": [
+    "የጽዳት ተቆጣጣሪ",
+    "የጽዳት ሠራተኛ",
+    "የቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ",
+    "የቲሹካልቸር ላብራቶሪ ብርጭቆ አጣቢ ሰራተኛ",
+    "የንጽህና አያያዝና አጠባበቅ",
+    "የንጽህና አያያዝና አጠባበቅ ሰራተኛ",
+    "ፅዳትና ተላላኪ ሰራተኛ",
+    "ፅዳት ሰራተኛና ተላላኪ",
+    "ተላላኪ",
+    "ደብዳቤ ላኪና ተቀባይ",
+    "ጉዳይ አስፈፃሚ",
+    "መጥሪያ አዳይ",
+    "ጉዳይ ክትትል ሰራተኛ",
+    "እግረኛ ፖስተኛ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-11",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-01",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-03",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-04",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት (ለጽዳት ሠራተኛ፣ ለቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ፣ ለንጽህና አያያዝና አጠባበቅ ሰራተኛ፣ ለፅዳትና ተላላኪ፣ ለፅዳት ሰራተኛና ተላላኪ ብቻ)",
+     "only": [
+      "የጽዳት ሠራተኛ",
+      "የቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ",
+      "የንጽህና አያያዝና አጠባበቅ ሰራተኛ",
+      "ፅዳትና ተላላኪ ሰራተኛ",
+      "ፅዳት ሰራተኛና ተላላኪ"
+     ],
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-02",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት (ለቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ፣ ለቲሹካልቸር ላብራቶሪ ብርጭቆ አጣቢ ሰራተኛ፣ ለንጽህና አያያዝና አጠባበቅ ሰራተኛ፣ ለፅዳትና ተላላኪ፣ ለፅዳት ሰራተኛና ተላላኪ ብቻ)",
+     "only": [
+      "የቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ",
+      "የቲሹካልቸር ላብራቶሪ ብርጭቆ አጣቢ ሰራተኛ",
+      "የንጽህና አያያዝና አጠባበቅ ሰራተኛ",
+      "ፅዳትና ተላላኪ ሰራተኛ",
+      "ፅዳት ሰራተኛና ተላላኪ"
+     ],
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ (ለጽዳት ሠራተኛ፣ ለቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ፣ ለንጽህና አያያዝና አጠባበቅ ሰራተኛ፣ ለፅዳትና ተላላኪ፣ ለፅዳት ሰራተኛና ተላላኪ ብቻ)",
+     "only": [
+      "የጽዳት ሠራተኛ",
+      "የቲሹካልቸር ላብራቶሪ ክፍሎች ፅዳት ሰራተኛ",
+      "የንጽህና አያያዝና አጠባበቅ ሰራተኛ",
+      "ፅዳትና ተላላኪ ሰራተኛ",
+      "ፅዳት ሰራተኛና ተላላኪ"
+     ],
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-24",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በአመት አንድ (ለጉዳይ አስፈፃሚ፣ ለመጥሪያ አዳይ፣ ለጉዳይ ክትትል ሰራተኛ፣ እግረኛ ፖስተኛ ብቻ)",
+     "only": [
+      "ጉዳይ አስፈፃሚ",
+      "መጥሪያ አዳይ",
+      "ጉዳይ ክትትል ሰራተኛ",
+      "እግረኛ ፖስተኛ"
+     ],
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "page": 25,
+   "active": false,
+   "applies_to": "ለርዕሰ መስተዳድር፣ ለዋና አፈጉባኤ፣ ምክትል ርዕሰ መስተዳድር እና አቻ ለሆኑ ብቻ (for the Regional President, Speaker, Deputy President and equivalents only)",
+   "positions": [
+    "ልዩ ጥበቃ",
+    "ፕሮቶኮል ሹፌር",
+    "ፕሮቶኮል ባለሙያ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A1-21",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": 2,
+     "note": "የመጀመሪያው ዓመት ሁለት ተሰጥቶ በየዓመቱ አንድ የሚሰጥ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-22",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": 2,
+     "note": "በመጀመሪያው ዓመት ሁለት ተሰጥቶ በየዓመቱ አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ (ለፕሮቶኮል ሹፌር ብቻ)",
+     "only": [
+      "ፕሮቶኮል ሹፌር"
+     ],
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "page": 25,
+   "active": false,
+   "applies_to": "ለካቢኒ ጉዳዮችና የርዕሰ መስተዳድር ጽ/ቤት ብቻ (for Cabinet Affairs and the Regional President's Office only)",
+   "positions": [
+    "የካቢኒ ጉዳዮች ሴክሬታሪያት ዳይሬክተር እና የካቢኒ ሴክሬታሪያት ባለሙያ",
+    "አስጎብኛ ባለሙያ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A1-21",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": 2,
+     "note": "የመጀመሪያው ዓመት ሁለት ተሰጥቶ በየዓመቱ አንድ የሚሰጥ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-22",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": 2,
+     "note": "በመጀመሪያው ዓመት ሁለት ተሰጥቶ በየዓመቱ አንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "page": 25,
+   "positions": [
+    "ሞተረኛ ፖስተኛ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A3-04",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-05",
+     "quantity": 1,
+     "per_months": 36,
+     "first_issue_quantity": null,
+     "note": "በመጀመሪያ አንድ ተሰጥቶ በ3 ዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-05",
+     "quantity": 1,
+     "per_months": 36,
+     "first_issue_quantity": null,
+     "note": "በመጀመሪያ አንድ ተሰጥቶ በ3 ዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-19",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "page": 25,
+   "positions": [
+    "ሹፌር",
+    "የባለሶስት እግር ተሽከርካሪ ሹፌር (ባጃጅ)",
+    "አምቡላንስ ሹፌር",
+    "ጎሚስታ ሠራተኛ",
+    "ጎሚስታ",
+    "የልዩ ተሽከርካሪ ሹፌር",
+    "የልዩ ተሽከርካሪ ሹፌር ረዳት",
+    "የከባድ መኪና ሹፌር",
+    "የከባድ መኪና ሹፌር ረዳት",
+    "ረዳት የትራክተር ኦፐሬተር",
+    "ሹፌር ረዳት",
+    "ረዳት ኤክስካባተር ኦፐሬተር",
+    "ረዳት ዶዘር ኦፐሬተር",
+    "ረዳት ግሬደር ኦፐሬተር",
+    "ረዳት ሎደር ኦፐሬተር",
+    "ረዳት ሮለር ኦፐሬተር",
+    "ረዳት ሎቬድ ኦፐሬተር",
+    "ረዳት ክሬን ኦፐሬተር"
+   ],
+   "rules": [
+    {
+     "item": "D173-A3-01",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-03",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ (ከሾፌር፣ የባለሶስት እግር ተሽከርካሪ (ባጃጅ) ሾፌር፣ አምቡላንስ ሾፌር ውጭ ሌሎች)",
+     "only": null,
+     "exclude": [
+      "ሹፌር",
+      "የባለሶስት እግር ተሽከርካሪ ሹፌር (ባጃጅ)",
+      "አምቡላንስ ሹፌር"
+     ]
+    },
+    {
+     "item": "D173-A1-26",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት (ከሾፌር፣ የባለሶስት እግር ተሽከርካሪ (ባጃጅ) ሾፌር፣ አምቡላንስ ሾፌር ውጭ ሌሎች)",
+     "only": null,
+     "exclude": [
+      "ሹፌር",
+      "የባለሶስት እግር ተሽከርካሪ ሹፌር (ባጃጅ)",
+      "አምቡላንስ ሹፌር"
+     ]
+    },
+    {
+     "item": "D173-A3-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ (ከሾፌር፣ የባለሶስት እግር ተሽከርካሪ (ባጃጅ) ሾፌር፣ አምቡላንስ ሾፌር ውጭ ሌሎች)",
+     "only": null,
+     "exclude": [
+      "ሹፌር",
+      "የባለሶስት እግር ተሽከርካሪ ሹፌር (ባጃጅ)",
+      "አምቡላንስ ሹፌር"
+     ]
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "page": 26,
+   "positions": [
+    "ሁለገብ ጥገና ሠራተኛ",
+    "ትራክተር ኦፐሬተር",
+    "ኤክስካባተር ኦፐሬተር",
+    "ዶዘር ኦፐሬተር",
+    "ግሬደር ኦፐሬተር",
+    "ሎደር ኦፐሬተር",
+    "ሮለር ኦፐሬተር",
+    "ሎቬድ ኦፐሬተር",
+    "ክሬን ኦፐሬተር",
+    "ፎርክ ሊፍት",
+    "ክሬቸር ኦፐሬተር",
+    "ክሬን ትራክ ሹፌር",
+    "ሪግ ኦፐሬተር",
+    "ማሽን ኦፐሬተር",
+    "ረዳት ማሽን ኦፐሬተር",
+    "መለስተኛ ማሽን ኦፐሬተር",
+    "ማሽን ቁጥጥርና ጥገና ባለሙያ/ሰራተኛ",
+    "ከፍተኛ ማሽኒስት",
+    "ማሽኒስት",
+    "የእንጨት ሥራ ቴክኒሺያን/ባለሙያ",
+    "የእንጨት ሠራተኛ",
+    "ብረታብረት ቴክኒሻን",
+    "ቀለም ቀቢ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-10",
+     "quantity": 1,
+     "per_months": 24,
+     "first_issue_quantity": null,
+     "note": "በመጀመሪያ አንድ ተሰጥቶ በየ2 ዓመቱ አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A2-08",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "page": 26,
+   "positions": [
+    "የቅባት፣ ነዳጅና ዘይት አዳይ /የተሽከረካሪ/"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-18",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "page": 26,
+   "immediate": true,
+   "immediate_note": "Garage work: Art. 7(2) entitles garage workers from the date of assignment (no six-month wait). Group confirmed as garage positions from their titles; HR to confirm.",
+   "partial_note": "Page 27 continues this position list but that part of the scan is smudged and unreadable, so those positions are NOT imported (only fragments such as \"መካኒክ\", \"ረዳት የምርት ሠራተኛ\", \"ቀለም ቀቢ\" are visible).",
+   "positions": [
+    "የትራንስፖርት ሥምሪት ጋራዥ ክፍል ኃላፊ",
+    "የጋራዥ ጥገና ኃላፊ",
+    "የጋራዥ ኃላፊ/ባለሙያ/ሠራተኛ",
+    "መካኒክ",
+    "ረዳት መካኒክ",
+    "ቀጥቃጭ",
+    "የአውቶ ኤሌክትሪሺያን",
+    "የጥገና ሠራተኛና",
+    "በያጅ",
+    "ብረታብረት ሠራተኛ"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-10",
+     "quantity": 1,
+     "per_months": 24,
+     "first_issue_quantity": null,
+     "note": "በመጀመሪያ አንድ ተሰጥቶ በየ2 ዓመቱ አንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-08",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-07",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-09",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በአመት አንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "page": 27,
+   "active": false,
+   "unreadable": true,
+   "applies_to": "The position title of this row (ተ.ቁ 11) is faded and cannot be read in the scan (it ends \"…ሠራተኛ\"). The items below are legible. The row is stored INACTIVE under a placeholder title until HR reads the original and enters the correct title.",
+   "positions": [
+    "[የሥራ መደብ መጠሪያ በስካኑ ላይ አይነበብም — ተ.ቁ 11]"
+   ],
+   "rules": [
+    {
+     "item": "D173-A2-06",
+     "quantity": 2,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሁለት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-09",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-06",
+     "quantity": 1,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት አንድ ጥንድ",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A1-26",
+     "quantity": 3,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሶስት",
+     "only": null,
+     "exclude": null
+    },
+    {
+     "item": "D173-A3-08",
+     "quantity": 3,
+     "per_months": null,
+     "first_issue_quantity": null,
+     "note": "በዓመት ሶስት ጥንድ",
+     "only": null,
+     "exclude": null
+    }
+   ]
+  }
+ ]
+}

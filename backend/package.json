@@ -1,0 +1,46 @@
+{
+  "name": "hrms-backend",
+  "version": "1.0.0",
+  "description": "Human Resource Management System - API",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "db:init": "node src/init.js",
+    "seed:admin": "node src/seed-admin.js",
+    "seed:demo": "node src/seed-demo.js",
+    "users:replace-demo": "node src/replace-demo-users.js",
+    "users:replace-demo:apply": "node src/replace-demo-users.js --apply",
+    "seed:all": "npm run seed:admin && npm run seed:demo",
+    "test:e2e": "node test/e2e.js",
+    "test:directive": "node test/directive.js",
+    "test:probation": "node test/probation.js",
+    "ppe:map": "node src/map-ppe-titles.js",
+    "test:ppe-titles": "node test/ppe_titles.js",
+    "test:register": "node test/register.js",
+    "test:experience": "node test/experience.js",
+    "test:authority": "node test/authority.js",
+    "test:migration": "node test/migration.js",
+    "test:import": "node test/import.js",
+    "test:certificates": "node test/certificates.js",
+    "test:retirement": "node test/retirement.js",
+    "test:permanent": "node test/permanent.js",
+    "test": "npm run test:e2e && npm run test:directive && npm run test:ppe && npm run test:ppe-titles && npm run test:probation && npm run test:ppe-titles && npm run test:register && npm run test:experience && npm run test:authority && npm run test:import && npm run test:migration && npm run test:certificates && npm run test:retirement && npm run test:permanent",
+    "seed:ppe": "node src/seed-ppe.js",
+    "test:ppe": "node test/ppe_catalog.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "pdfkit": "^0.15.2",
+    "pg": "^8.12.0"
+  }
+}

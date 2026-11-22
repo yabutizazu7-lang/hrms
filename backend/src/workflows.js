@@ -1,0 +1,21 @@
+// Workflow definitions per HR case type. NOTHING here states a legal rule: required fields/documents are *record-keeping minimums*,
+// approval authority comes from the editable table case_approval_rules, and every legal reference is typed in by HR (directive_ref).
+const DATE = 'date', TEXT = 'text', NUM = 'number';
+const T = {
+  permanent_appointment: { code: 'PA', fields: { probation_evaluation_result: [TEXT, ['satisfactory', 'unsatisfactory']], appointment_basis: [TEXT], probation_evaluation_date: [DATE] }, required: ['probation_evaluation_result', 'appointment_basis'], docs: 1, self: false },
+  promotion: { code: 'PR', fields: { new_position_id: [NUM], new_staff_position_id: [NUM], new_grade: [TEXT], promotion_basis: [TEXT], evaluation_score: [NUM] }, required: ['new_position_id', 'promotion_basis'], docs: 1, self: false },
+  acting_assignment: { code: 'AC', fields: { acting_position_title: [TEXT], acting_staff_position_no: [TEXT], start_date: [DATE], end_date: [DATE], assignment_kind: [TEXT, ['acting', 'temporary_assignment', 'dean', 'department_coordinator', 'division_coordinator']] }, required: ['acting_position_title', 'start_date', 'assignment_kind'], docs: 1, self: false },
+  internal_transfer: { code: 'IT', fields: { to_department_id: [NUM], to_position_id: [NUM], to_staff_position_id: [NUM], transfer_reason: [TEXT] }, required: ['transfer_reason'], oneOf: ['to_department_id', 'to_position_id', 'to_staff_position_id'], docs: 0, self: true },
+  external_transfer: { code: 'ET', fields: { direction: [TEXT, ['out', 'in']], other_institution: [TEXT], releasing_letter_ref: [TEXT], receiving_letter_ref: [TEXT], previous_start: [DATE], previous_end: [DATE] }, required: ['direction', 'other_institution'], docs: 1, self: false },
+  termination: { code: 'TM', fields: { ground: [TEXT], legal_ref: [TEXT], notice_given_on: [DATE], response_text: [TEXT], response_waived: [TEXT, ['yes']], investigation_summary: [TEXT], appeal_outcome: [TEXT] }, required: ['ground', 'legal_ref'], docs: 1, self: false, confidential: true, beforeRecommend: ['notice_given_on', ['response_text', 'response_waived']] },
+  retirement: { code: 'RT', fields: { retirement_basis: [TEXT], expected_date: [DATE], notification_sent_on: [DATE], pension_referral_ref: [TEXT], pension_documents_status: [TEXT, ['not_started', 'submitted', 'accepted']], remarks: [TEXT] }, required: ['retirement_basis'], docs: 0, self: false },
+  disciplinary: { code: 'DS', fields: { incident_date: [DATE], incident_description: [TEXT], rule_ref: [TEXT], investigator_user_id: [NUM], notified_on: [DATE], response_text: [TEXT], response_waived: [TEXT, ['yes']], hearing_date: [DATE], findings: [TEXT], sanction_code: [TEXT], appeal_outcome: [TEXT] }, required: ['incident_date', 'incident_description', 'rule_ref'], docs: 0, self: false, confidential: true, beforeRecommend: ['notified_on', ['response_text', 'response_waived'], 'findings'] },
+  long_term_education: { code: 'LE', fields: { program: [TEXT], institution: [TEXT], level: [TEXT], start_date: [DATE], end_date: [DATE], mode: [TEXT, ['regular', 'extension', 'weekend', 'distance', 'other']], location: [TEXT, ['domestic', 'abroad']], progress_note: [TEXT] }, required: ['program', 'institution', 'start_date'], docs: 1, self: true },
+  short_term_training: { code: 'ST', fields: { course: [TEXT], provider: [TEXT], start_date: [DATE], end_date: [DATE], cost: [NUM], needs_assessment: [TEXT] }, required: ['course', 'provider', 'start_date'], docs: 0, self: true },
+  recommendation_letter: { code: 'RL', fields: { purpose: [TEXT] }, required: [], docs: 0, self: true },   // ምክረ ሐሳብ: once issued (completed) it enables the Work Experience Certificate
+  experience_certificate: { code: 'EX', fields: { purpose: [TEXT] }, required: [], docs: 0, self: true },
+};
+// stage graph shared by all types (not every action applies to every type; see allowed())
+const NEXT = { draft: ['submit', 'cancel'], submitted: ['review', 'return', 'cancel'], returned: ['submit', 'cancel'], under_review: ['return', 'recommend', 'cancel'], recommended: ['decide', 'return', 'reopen'], approved: ['complete', 'appeal'], appealed: ['decide'], completed: [], rejected: [], cancelled: [] };
+const FINAL = ['completed', 'rejected', 'cancelled'];
+module.exports = { T, NEXT, FINAL, DATE, TEXT, NUM };
